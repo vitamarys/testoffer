@@ -1108,6 +1108,15 @@
                 font-size: 13px;
                 color: rgba(255, 255, 255, 0.3);
             }
+            .head__logo{
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                img{
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
         }
         .text{
             color: rgba(255, 255, 255, 0.6);
