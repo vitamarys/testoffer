@@ -4,7 +4,7 @@ const animCard = document.querySelector('.showAn');
 
 document.addEventListener('scroll',()=>{
 
-    if(animCard.getBoundingClientRect().top < 500){
+    if(animCard.getBoundingClientRect().top < 800){
         animCard.classList.add('show')
     }
     anim.forEach(element => {

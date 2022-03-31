@@ -56,15 +56,15 @@ $(function(){
 let isCounter = true;
  $(window).scroll(()=>{
      if(isCounter){
-        if($('.counter')[0].getBoundingClientRect().top < 500){
+        if($('.counter')[0].getBoundingClientRect().top < 1000){
             $({ countNum: $('.counter').html() }).animate({ countNum: 500000 }, {
                 duration: 4000,
                 easing: 'linear',
                 step: function () {
-                $('.counter').html(Math.floor(this.countNum) + "+");
+                $('.counter').html(Math.floor(this.countNum));
             },
             complete: function () {
-                $('.counter').html(this.countNum + "+");
+                $('.counter').html(this.countNum);
                 
             }
             });
