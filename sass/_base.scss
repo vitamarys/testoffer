@@ -1,0 +1,123 @@
+@import'./vars';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-family: 'HelveticaNeueCyr';
+  position: relative;
+  margin-top: 80px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.base-btn{
+    padding: 14px 20px;
+    color: $white;
+    background-color: $black;
+    border: none;
+    outline: none;
+    border-radius: 51px;
+    box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 15px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    @media(max-width:767px){
+      font-size: 14px;
+
+        
+    }
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    @media(max-width:767px){
+    width: 100%;
+    padding: 0 15px;
+      
+  }
+    .content-block{
+      &:nth-child(1){
+    
+        width: 30%;
+        padding-right: 35px;
+    
+      }
+      &:nth-child(2){
+    
+        width: 70%;
+        padding-left: 70px;
+      }
+      @media(max-width:767px){
+        &:nth-child(1){
+    
+          width: 100%;
+          padding-right: 0px;
+      
+        }
+        &:nth-child(2){
+      
+          width: 100%;
+          padding-left: 0px;
+        }
+     }
+    }
+}
+
+
